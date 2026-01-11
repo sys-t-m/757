@@ -10,7 +10,7 @@
 <div class="container">
     @include('components.header')
     <main>
-
+        @yield('content')
     </main>
 </div>
 </body>

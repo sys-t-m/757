@@ -1,4 +1,4 @@
-@vite('resources/css/header.scss')
+@vite('resources/css/components/header.scss')
 <header>
     <a href="{{ route('copertine') }}" class="header-element-1">
         Copertine
