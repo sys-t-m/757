@@ -1,0 +1,27 @@
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Glass Antiqua', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@font-face {
+    font-family: 'Glass Antiqua';
+    src: url('../fonts/GlassAntiqua-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS Normalization */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+
+    body {
+        margin: 0;
+        background-color: #f5e5d5;
+    }
+}
