@@ -8,7 +8,7 @@ return new class extends Migration {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null');
-            $table->decimal('total_price', 10, 2);
+            $table->decimal('total_price', 10);
             $table->enum('status', ['pending', 'paid', 'shipped'])->default('pending');
             $table->text('shipping_address');
             $table->timestamps();
