@@ -3,8 +3,20 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.welcome');
 })->name('home');
+
+Route::get('/copertine', function () {
+    return view('copertine');
+})->name('copertine');
+
+Route::get('/chi-siamo', function () {
+    return view('chi-siamo');
+})->name('chi-siamo');
+
+Route::get('/contattaci', function () {
+    return view('contattaci');
+})->name('contattaci');
 
 Route::prefix('blog')->name('blog.')->group(function () {
     Route::get('/', function () {
