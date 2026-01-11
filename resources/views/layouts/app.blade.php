@@ -7,8 +7,11 @@
     @vite('resources/css/app.scss')
 </head>
 <body>
-@include('components.header')
-<main>
-</main>
+<div class="container">
+    @include('components.header')
+    <main>
+
+    </main>
+</div>
 </body>
 </html>

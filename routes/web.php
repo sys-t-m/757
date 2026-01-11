@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('layouts.welcome');
+    return view('layouts.app');
 })->name('home');
 
 Route::get('/copertine', function () {

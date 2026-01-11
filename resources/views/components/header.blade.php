@@ -7,7 +7,7 @@
         Chi Siamo
     </a>
     <a href="{{ route('home') }}" class="header-logo">
-        <h1>L'Opera dei Pupi</h1>
+        <h1>Il Titolo</h1>
     </a>
     <a href="{{ route('contattaci') }}" class="header-element-3">
         Contattaci
@@ -16,3 +16,5 @@
         Blog
     </a>
 </header>
+
+<hr class="double-hr">
