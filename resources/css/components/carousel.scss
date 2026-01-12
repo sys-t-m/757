@@ -1,0 +1,40 @@
+.carousel-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+
+    .carousel-title {
+        margin: 0;
+        font-size: 3rem;
+        font-family: 'Newsreader', serif;
+        color: black;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+
+.carousel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.carousel-item {
+    aspect-ratio: 2 / 3;
+    width: 100%;
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .carousel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-grid {
+        grid-template-columns: 1fr;
+    }
+}
