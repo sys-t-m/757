@@ -1,0 +1,115 @@
+.contact-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        background: #fff;
+        padding: 3rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+        }
+    }
+
+    .contact-info {
+        h2 {
+            font-family: 'Glass Antiqua', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                background: #fff5ec;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1rem;
+                color: #333;
+                font-weight: bold;
+            }
+
+            span {
+                font-size: 1rem;
+                color: #444;
+            }
+        }
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            label {
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: #333;
+            }
+
+            input, textarea {
+                padding: 0.8rem;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-family: inherit;
+                font-size: 1rem;
+                transition: border-color 0.3s;
+
+                &:focus {
+                    outline: none;
+                    border-color: #333;
+                }
+            }
+
+            textarea {
+                resize: vertical;
+                min-height: 120px;
+            }
+        }
+
+        .btn-submit {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 1rem;
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
