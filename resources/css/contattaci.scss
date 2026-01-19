@@ -1,9 +1,9 @@
-.contact-section {
+.contattaci-section {
     padding: 4rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
 
-    .contact-container {
+    .contattaci-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
@@ -18,7 +18,7 @@
         }
     }
 
-    .contact-info {
+    .contattaci-info {
         h2 {
             font-family: 'Glass Antiqua', serif;
             font-size: 2.5rem;
@@ -59,7 +59,7 @@
         }
     }
 
-    .contact-form {
+    .contattaci-form {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;

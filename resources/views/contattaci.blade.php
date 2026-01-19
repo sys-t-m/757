@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="contact-section">
-        <div class="contact-container">
-            <div class="contact-info">
+    <section class="contattaci-section">
+        <div class="contattaci-container">
+            <div class="contattaci-info">
                 <h2>Mettiamoci in contatto</h2>
                 <p>Siamo qui per rispondere a qualsiasi domanda o curiosità. Compila il modulo o usa i nostri recapiti diretti.</p>
                 <div class="info-item">
@@ -19,7 +19,7 @@
                     <span>info@esempio.it</span>
                 </div>
             </div>
-            <form class="contact-form" action="#" method="POST">
+            <form class="contattaci-form" action="#" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="name">Nome Completo</label>
