@@ -9,7 +9,7 @@ export default defineConfig({
                 'resources/css/app.scss',
                 'resources/css/components/header.scss',
                 'resources/js/app.js',
-                'resources/css/components/carousel.scss',
+                'resources/css/components/gallery.scss',
                 'resources/css/components/jumbotron.scss'
             ],
             refresh: true,
