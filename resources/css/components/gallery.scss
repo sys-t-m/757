@@ -2,34 +2,68 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    margin: 0;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
 
     .gallery-title {
-        margin: 0;
+        margin-bottom: 3rem;
         font-size: 3rem;
-        font-family: 'Newsreader', serif;
-        color: black;
+        font-family: 'Glass Antiqua', serif;
+        color: #333;
         text-align: center;
-        padding: 1rem 0;
     }
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 0 10px;
+    gap: 2rem;
 }
 
 .gallery-item {
     aspect-ratio: 2 / 3;
     width: 100%;
-    background-color: red;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.02);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+        img {
+            transform: scale(1.05);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
+    .gallery-container {
+        margin: 2rem auto;
+        padding: 0 1rem;
+
+        .gallery-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 }
 
