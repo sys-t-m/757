@@ -9,7 +9,6 @@
                 <li><a href="{{ route('chi-siamo') }}">Chi Siamo</a></li>
                 <li><a href="{{ route('contattaci') }}">Contattaci</a></li>
                 <li><a href="{{ route('blog.index') }}">Blog</a></li>
-                <li><a href="{{ route('shop.index') }}">Shop</a></li>
             </ul>
         </div>
         <div class="footer-info">
