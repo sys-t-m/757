@@ -10,6 +10,10 @@ Route::get('/copertine', function () {
     return view('copertine');
 })->name('copertine');
 
+Route::get('/copertine/{id}', function ($id) {
+    return view('copertine-show', ['id' => $id]);
+})->name('copertine.show');
+
 Route::get('/chi-siamo', function () {
     return view('chi-siamo');
 })->name('chi-siamo');

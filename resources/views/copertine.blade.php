@@ -9,7 +9,7 @@
 
         <div class="copertine-grid">
             @for ($i = 1; $i <= 6; $i++)
-                <div class="copertina-card">
+                <a href="{{ route('copertine.show', ['id' => $i]) }}" class="copertina-card">
                     <div class="copertina-image">
                         <img src="https://picsum.photos/seed/magazine{{ $i }}/400/600" alt="Rivista Numero {{ $i }}">
                         <span class="price-tag">€12.00</span>
@@ -19,9 +19,9 @@
                             <h3>Edizione #{{ $i }}</h3>
                             <p>Un viaggio attraverso le ultime tendenze del design e della cultura contemporanea.</p>
                         </div>
-                        <a href="#" class="buy-button">Acquista Ora</a>
+                        <span class="buy-button">Vedi Dettagli</span>
                     </div>
-                </div>
+                </a>
             @endfor
         </div>
     </section>
